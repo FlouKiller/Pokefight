@@ -15,6 +15,9 @@ Pokefight is a turn-based battle game where you face off against a computer-cont
   - Switch active Pokémon
   - Use potions to heal
 - **Adaptive AI**: Computer makes intelligent decisions (70% attack, 30% heal)
+- **Two Game Modes**:
+  - **Text-based**: Classic terminal interface
+  - **GUI**: Modern graphical interface with tkinter
 - **Intuitive Interface**: Clear display of stats and options
 
 ## 🎯 Pokémon Types and Combat System
@@ -39,8 +42,20 @@ Damage is multiplied by 2 with type advantage, divided by 2 with type disadvanta
 2. Navigate to the project folder
 
 ### Launch the game
+
+**Easy launcher (choose between text/GUI):**
+```bash
+python launcher.py
+```
+
+**Text-based version:**
 ```bash
 python pokefight.py
+```
+
+**Graphical version (GUI):**
+```bash
+python pokefight_gui.py
 ```
 
 ### Tests
@@ -53,11 +68,13 @@ python "fichier test.py"
 
 ```
 Pokefight/
-├── pokefight.py      # Main game file
-├── classes.py        # Trainer and Pokemon classes
-├── pokemons.py       # List of available Pokémon
-├── fichier test.py   # Unit tests
-└── README.md         # This file
+├── launcher.py         # Game launcher (choose text/GUI)
+├── pokefight.py        # Main game file (text-based)
+├── pokefight_gui.py    # Graphical interface version
+├── classes.py          # Trainer and Pokemon classes
+├── pokemons.py         # List of available Pokémon
+├── fichier test.py     # Unit tests
+└── README.md           # This file
 ```
 
 ## 🎮 How to Play
@@ -122,12 +139,14 @@ The `fichier test.py` file contains unit tests to verify:
 
 ## 🎯 Possible Improvements
 
-- Graphical interface
+- ~~Graphical interface~~ ✅ **COMPLETED!**
 - Game saves
 - Battle animations
 - More attack types
-- Experience and leveling system
+- System d'expérience and leveling system
 - Network multiplayer
+- Sound effects and background music
+- Pokemon sprites and images
 
 ---
 
